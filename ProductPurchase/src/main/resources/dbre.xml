@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="deprecated" package="es.product.domain">
+    <option key="moduleName" value=""/>
+    <option key="activeRecord" value="true"/>
+    <option key="repository" value="false"/>
+    <option key="service" value="false"/>
+    <option key="includeNonPortableAttributes" value="false"/>
+    <option key="disableVersionFields" value="false"/>
+    <option key="disableGeneratedIdentifiers" value="false"/>
+    <option key="testAutomatically" value="false"/>
+    <table alias="ADMIN" name="BOOKING_SALES">
+        <column name="ID" primaryKey="true" required="true" scale="0" size="10" type="4,INTEGER"/>
+        <column name="AMOUNT" primaryKey="false" required="false" scale="0" size="10" type="4,INTEGER"/>
+        <column name="STATE" primaryKey="false" required="false" scale="0" size="10" type="12,VARCHAR"/>
+        <column name="FK_STOCK" primaryKey="false" required="false" scale="0" size="10" type="4,INTEGER"/>
+        <foreign-key foreignTable="STOCK" name="SQL170615205447800" onDelete="none" onUpdate="none">
+            <option key="foreignSchemaName" value="ADMIN"/>
+            <option key="exported" value="false"/>
+            <reference foreign="STOCK_ID" local="FK_STOCK"/>
+        </foreign-key>
+        <foreign-key foreignTable="STATUS_OPERATION" name="SQL170615205449860" onDelete="none" onUpdate="none">
+            <option key="foreignSchemaName" value="ADMIN"/>
+            <option key="exported" value="true"/>
+            <reference foreign="FK_BOOKING" local="ID"/>
+        </foreign-key>
+        <unique name="SQL170615205446780">
+            <unique-column name="ID"/>
+        </unique>
+        <index name="SQL170615205447800">
+            <index-column name="FK_STOCK"/>
+        </index>
+    </table>
+    <table alias="ADMIN" name="PRODUCT">
+        <column name="PRODUCT_ID" primaryKey="true" required="true" scale="0" size="10" type="4,INTEGER"/>
+        <column name="DESCRIPTION" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR"/>
+        <column name="PRODUCT_TYPE" primaryKey="false" required="false" scale="0" size="20" type="12,VARCHAR"/>
+        <foreign-key foreignTable="STOCK" name="SQL170615205445720" onDelete="none" onUpdate="none">
+            <option key="foreignSchemaName" value="ADMIN"/>
+            <option key="exported" value="true"/>
+            <reference foreign="FK_PRODUCT" local="PRODUCT_ID"/>
+        </foreign-key>
+        <unique name="SQL170615205443620">
+            <unique-column name="PRODUCT_ID"/>
+        </unique>
+    </table>
+    <table alias="ADMIN" name="STATUS_OPERATION">
+        <column name="ID" primaryKey="true" required="true" scale="0" size="10" type="4,INTEGER"/>
+        <column name="BOOKED" primaryKey="false" required="false" scale="0" size="20" type="12,VARCHAR"/>
+        <column name="SOLD" primaryKey="false" required="false" scale="0" size="20" type="12,VARCHAR"/>
+        <column name="FK_BOOKING" primaryKey="false" required="false" scale="0" size="10" type="4,INTEGER"/>
+        <foreign-key foreignTable="BOOKING_SALES" name="SQL170615205449860" onDelete="none" onUpdate="none">
+            <option key="foreignSchemaName" value="ADMIN"/>
+            <option key="exported" value="false"/>
+            <reference foreign="ID" local="FK_BOOKING"/>
+        </foreign-key>
+        <unique name="SQL170615205448830">
+            <unique-column name="ID"/>
+        </unique>
+        <index name="SQL170615205449860">
+            <index-column name="FK_BOOKING"/>
+        </index>
+    </table>
+    <table alias="ADMIN" name="STOCK">
+        <column name="STOCK_ID" primaryKey="true" required="true" scale="0" size="10" type="4,INTEGER"/>
+        <column name="FK_PRODUCT" primaryKey="false" required="false" scale="0" size="10" type="4,INTEGER"/>
+        <column name="AVALAIBLE_PRODUCT" primaryKey="false" required="false" scale="0" size="10" type="4,INTEGER"/>
+        <column name="REAL_PRODUCT" primaryKey="false" required="false" scale="0" size="10" type="4,INTEGER"/>
+        <foreign-key foreignTable="PRODUCT" name="SQL170615205445720" onDelete="none" onUpdate="none">
+            <option key="foreignSchemaName" value="ADMIN"/>
+            <option key="exported" value="false"/>
+            <reference foreign="PRODUCT_ID" local="FK_PRODUCT"/>
+        </foreign-key>
+        <foreign-key foreignTable="BOOKING_SALES" name="SQL170615205447800" onDelete="none" onUpdate="none">
+            <option key="foreignSchemaName" value="ADMIN"/>
+            <option key="exported" value="true"/>
+            <reference foreign="FK_STOCK" local="STOCK_ID"/>
+        </foreign-key>
+        <unique name="SQL170615205444660">
+            <unique-column name="STOCK_ID"/>
+        </unique>
+        <index name="SQL170615205445720">
+            <index-column name="FK_PRODUCT"/>
+        </index>
+    </table>
+</database>

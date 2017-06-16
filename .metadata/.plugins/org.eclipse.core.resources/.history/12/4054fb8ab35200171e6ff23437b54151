@@ -1,0 +1,28 @@
+
+app.controller('PurchaseCtrl', ['$scope', 'PurchaseFactory', '$location',
+    function ($scope, FactoriaUsuarios, $location) {       
+             
+        // callback for ng-click 'createNewUsuario':
+        $scope.crearNuevoUsuario = function () {
+//        	if($scope.formNuevoUsuario.$valid){
+        		FactoriaUsuarios.create([], $scope.usuariosRegistrados,
+					     				function (data) {
+        			 					    $location.path('/acceso');
+								     		alert("Se ha registrado correctamente.")
+								     	}, 
+								     	function (error) {
+								     		if (error.status == 409){
+								     			alert("Imposible registrar usuario, el email ya existe en el sistema, si desactivo su cuenta en el pasado, intente reactivarla.");
+								     			$location.path('/acceso');									     		
+								     		}else 
+								     		alert("Error registrando el usuario, intentelo de nuevo más tarde.")
+								     	});                 
+//        	}           
+        };
+        
+        // callback for ng-click 'cancel':
+        $scope.cancel = function () {
+            $location.path('/acceso');
+        };
+        
+    }]);

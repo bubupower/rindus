@@ -1,0 +1,23 @@
+'use strict';
+
+// Declare app level module which depends on filters, and servicios
+angular.module('sportEvent', ['sportEvent.filtros', 'sportEvent.servicios', 'sportEvent.directivas', 'sportEvent.controladores']).
+    config(['$routeProvider', function ($routeProvider) {
+        $routeProvider.when('/registro-usuario', {templateUrl: 'vistas/registro-usuario.html', controller: 'CreacionUsuarioCtrl'});
+        $routeProvider.when('/acceso', {templateUrl: 'vistas/acceso.html', controller: 'AccesoCtrl'});
+        $routeProvider.when('/seleccion-operacion/:id', {templateUrl: 'vistas/seleccion-operacion.html', controller: 'SeleccionOperacionCtrl'});
+        $routeProvider.when('/detalle-usuario/:id', {templateUrl: 'vistas/detalle-usuario.html', controller: 'DetalleUsuarioCtrl'});
+        $routeProvider.when('/creacion-evento/:usuarioId', {templateUrl: 'vistas/creacion-evento.html', controller: 'CreacionEventoCtrl'});
+        $routeProvider.when('/detalle-evento/:id', {templateUrl: 'vistas/detalle-evento.html', controller: 'DetalleEventoCtrl'});
+        $routeProvider.when('/geoLocalizacion/:usuarioId', {templateUrl: 'vistas/geoLocalizacion.html', controller: 'GeoLocalizacionCtrl'});
+        $routeProvider.when('/acerca-de', {templateUrl: 'vistas/acerca-de.html', controller: 'AcercaDeCtrl'});
+        $routeProvider.when('/creacion-incidencia/:usuarioId', {templateUrl: 'vistas/creacion-incidencia.html', controller: 'IncidenciaCtrl'});
+        $routeProvider.when('/restaurar-contrasena', {templateUrl: 'vistas/restaurar-contrasena.html', controller: 'ContrasenaCtrl'});
+        $routeProvider.when('/listar-eventos-creados/:usuarioId', {templateUrl: 'vistas/listar-eventos-creados.html', controller: 'ListarEventoCtrl'});
+        $routeProvider.when('/listar-eventos-participantes/:usuarioId', {templateUrl: 'vistas/listar-eventos-participantes.html', controller: 'ListarEventoParticipantesCtrl'});
+        $routeProvider.when('/error', {templateUrl: 'vistas/error.html', controller: 'ErrorCtrl'});
+        $routeProvider.otherwise({redirectTo: '/acceso'});
+
+    }]);
+
+

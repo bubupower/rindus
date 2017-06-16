@@ -1,0 +1,13 @@
+Create table PRODUCT (product_id INT PRIMARY KEY, description VARCHAR(40), product_type VARCHAR(20));
+
+Create table STOCK(stock_id INT PRIMARY KEY, fk_product INT, avalaible_product INT, real_product INT);
+
+ALTER TABLE STOCK ADD FOREIGN KEY (fk_product) REFERENCES PRODUCT (product_id);
+
+Create table BOOKING_SALES(id INT PRIMARY KEY, amount INT, state VARCHAR(10), fk_stock INT);
+
+ALTER TABLE BOOKING_SALES ADD FOREIGN KEY (fk_stock) REFERENCES STOCK (stock_id);
+
+Create table STATUS_OPERATION(id INT PRIMARY KEY, booked VARCHAR(20), sold VARCHAR(20), fk_booking INT);
+
+ALTER TABLE STATUS_OPERATION ADD FOREIGN KEY (fk_booking) REFERENCES BOOKING_SALES (id);

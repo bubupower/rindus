@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" ng-app="purchase">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+<!--     <link rel="stylesheet" href="css/app.css"/> -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+<!--     <link rel="icon" type="image/png" src="img/imagenes/icon.png" /> -->
+</head>
+
+<body> 
+    <div class="container"> 
+ 		<div class="row">
+ 			<div class="col-xs-2 col-md-3 col-sm-3 col-lg-3">
+ 				<div class="panel panel-primary">
+				    <div class="panel-heading">
+				        <h3 class="panel-title">Product</h3>
+				    </div>
+				    <div class="panel-body">
+				        <div class="radio">
+				            <label>
+				                <input type="radio" id = "1" name="optradio">perfume</label>
+				        </div>
+				        <div class="radio">
+				            <label>
+				                <input type="radio" id = "2" name="optradio">cream</label>
+				        </div>
+				        <div class="radio">
+				            <label>
+				                <input type="radio" id = "3" name="optradio">nail lacquer</label>
+				        </div>
+				        <div class="control-group">
+            				<div class="controls center">
+            					<button type="submit" ng-click="updateStock()" >Continue with your purchase</button>
+<!--            					<a ng-click="crearNuevoUsuario()" class="btn btn-small">Registrarse</a> -->
+           					</div>
+           				</div>        
+				    </div>
+				</div>
+ 
+			</div>
+   
+		</div>
+    </div>
+ 
+</body>
+
+<div ng-view>
+	
+
+</div>
+
+<!-- JQuery ================================================================ -->
+<script src="jsLibs/jquery/jquery-2.0.3.js"></script>
+
+<!-- Bootstrap ============================================================= -->
+<script src="jsLibs/bootstrap/bootstrap.js"></script>
+
+<!-- AngularJS ============================================================= -->
+<!-- In production use:-->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
+
+<script src="jsLibs/angular/angular.js"></script>
+<script src="jsLibs/angular/angular-resource.js"></script>
+
+
+<!-- AngularJS App Code ==================================================== -->
+<script src="configuracion.js"></script>
+<script src="jsControladores/app.js"></script>
+<!-- <script src="jsControladores/serviciosGenericos.js"></script> -->
+<!-- <script src="jsControladores/serviciosUsuario.js"></script> -->
+<!-- <script src="jsControladores/serviciosEvento.js"></script> -->
+<!-- <script src="jsControladores/controladoresUsuario.js"></script> -->
+<!-- <script src="jsControladores/controladoresEvento.js"></script> -->
+
+
+<script src="jsControladores/directives.js"></script>
+
+
+</body>
+</html>

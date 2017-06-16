@@ -1,0 +1,68 @@
+2017-06-15 21:00:33,345 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: es.product:ProductPurchase:0.1.0.BUILD-SNAPSHOT @ E:\WorkspaceEjercicio\ProductPurchase\pom.xml.
+2017-06-15 21:00:37,657 [Worker-47] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: es.product:ProductPurchase:0.1.0.BUILD-SNAPSHOT @ E:\WorkspaceEjercicio\ProductPurchase\pom.xml.
+2017-06-15 21:00:37,695 [Worker-46] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProductPurchase/src/main/java
+2017-06-15 21:00:37,696 [Worker-46] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProductPurchase/src/main/resources
+2017-06-15 21:00:37,700 [Worker-46] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProductPurchase/src/test/java
+2017-06-15 21:00:38,591 [Worker-46] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /ProductPurchase/src/main/aspect does not exist yet. Create it and re-run configuration.
+2017-06-15 21:00:38,612 [Worker-46] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /ProductPurchase/src/main/aspect does not exist yet. Create it and re-run configuration.
+2017-06-15 21:00:50,172 [Worker-46] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 23 sec
+2017-06-15 21:01:09,503 [Worker-51] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: es.product:ProductPurchase:0.1.0.BUILD-SNAPSHOT @ E:\WorkspaceEjercicio\ProductPurchase\pom.xml.
+2017-06-15 21:01:10,558 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:01:10,581 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-15 21:01:10,642 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:01:10,643 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-15 21:01:10,646 [Worker-51] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProductPurchase
+2017-06-15 21:01:10,655 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:01:10,656 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-06-15 21:14:19,943 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:14:19,949 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-15 21:14:19,951 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:14:19,951 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-15 21:14:40,998 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:14:40,999 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-15 21:14:41,001 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:14:41,001 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-15 21:15:19,012 [Worker-86] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-15 21:15:19,275 [Worker-86] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: es.product:ProductPurchase:0.1.0.BUILD-SNAPSHOT @ E:\WorkspaceEjercicio\ProductPurchase\pom.xml.
+2017-06-15 21:15:21,464 [Worker-86] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProductPurchase/src/main/java
+2017-06-15 21:15:21,465 [Worker-86] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProductPurchase/src/main/resources
+2017-06-15 21:15:21,465 [Worker-86] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProductPurchase/src/test/java
+2017-06-15 21:15:21,466 [Worker-86] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /ProductPurchase/src/main/aspect does not exist yet. Create it and re-run configuration.
+2017-06-15 21:15:21,468 [Worker-86] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /ProductPurchase/src/main/aspect does not exist yet. Create it and re-run configuration.
+2017-06-15 21:15:23,028 [Worker-86] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: es.product:ProductPurchase:0.1.0.BUILD-SNAPSHOT @ E:\WorkspaceEjercicio\ProductPurchase\pom.xml.
+2017-06-15 21:15:25,533 [Worker-86] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProductPurchase
+2017-06-15 21:15:25,538 [Worker-86] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2017-06-15 21:15:33,745 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:15:33,745 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-15 21:15:33,752 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:15:33,752 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-15 21:15:33,753 [Worker-86] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProductPurchase
+2017-06-15 21:15:33,755 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:15:33,756 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-06-15 21:18:33,209 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:18:33,210 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-15 21:18:33,211 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:18:33,211 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-15 21:23:26,358 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:23:26,362 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-15 21:23:26,365 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:23:26,365 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-15 21:23:26,366 [Worker-99] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProductPurchase
+2017-06-15 21:23:26,405 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-15 21:23:26,405 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-16 17:44:14,976 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-16 17:44:15,072 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-16 17:44:15,417 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-16 17:44:15,417 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-16 18:56:08,258 [Worker-34] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProductPurchase
+2017-06-16 18:56:18,058 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-16 18:56:18,058 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-16 18:56:18,058 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-16 18:56:18,058 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources
+2017-06-16 18:56:18,058 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProductPurchase
+2017-06-16 18:56:18,355 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-16 18:56:18,370 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-06-16 19:09:17,846 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-16 19:09:17,846 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-16 19:09:17,846 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-16 19:09:17,846 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\WorkspaceEjercicio\ProductPurchase\src\test\resources

@@ -1,0 +1,24 @@
+// Crea el proyecto
+project --topLevelPackage es.product --projectName ProductPurchase --java 7 --packaging JAR
+
+// Configura la persistencia
+// el valor de --provider puede ser HIBERNATE, OPENJPA... http://docs.spring.io/spring-roo/reference/html/base-persistence.html
+persistence setup --database DERBY_CLIENT --provider HIBERNATE --userName admin --password admin --hostName localhost --databaseName MyDB
+
+// Crea mediante ingeniería inversa todas las entidades, y las coloca bajo el paquete ${topLevelPackage}.domain
+database introspect --schema admin
+database reverse engineer --schema admin --package ~.domain
+
+// Anota todas las entidades con el aspecto de serialización/deserialización JSON
+json all
+
+// Configura el soporte JSON
+web mvc json setup
+
+// Crea controladores JSON para todas las entidades y los coloca bajo el paquete ${topLevelPackage}.web
+web mvc json all --package ~.web
+
+// Controladores CRUD para MVC
+// Habría que hacer esto por cada clase de entidad
+//web mvc scaffold --class claseEntidad
+

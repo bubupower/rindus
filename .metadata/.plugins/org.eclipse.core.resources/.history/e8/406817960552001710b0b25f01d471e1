@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" ng-app="sportEvent">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <h1>Purchase</h1>
+<!--     <link rel="stylesheet" href="css/app.css"/> -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+<!--     <link rel="icon" type="image/png" src="img/imagenes/icon.png" /> -->
+</head>
+<body>
+
+<!-- <div id="head" > -->
+<!-- 	<div class="logo"> -->
+<!-- 		<h1 id="site-title"> -->
+<!-- 			<a href="#" title="Esportvent" rel="home"> -->
+<!-- 				<img  src="img/imagenes/header.png"> -->
+<!-- 			</a> -->
+<!-- 		</h1> -->
+<!-- 	</div> -->
+<!-- </div> -->
+<div ng-view>
+	
+
+</div>
+
+<!-- JQuery ================================================================ -->
+<script src="jsLibs/jquery/jquery-2.0.3.js"></script>
+
+<!-- Bootstrap ============================================================= -->
+<script src="jsLibs/bootstrap/bootstrap.js"></script>
+
+<!-- AngularJS ============================================================= -->
+<!-- In production use:-->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
+
+<script src="jsLibs/angular/angular.js"></script>
+<script src="jsLibs/angular/angular-resource.js"></script>
+
+
+<!-- Google maps api -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCW15hPixSA-qqI7c5fIKcVs6KJ3l2dZsE" async="" defer="defer" ></script>
+
+
+<!-- AngularJS App Code ==================================================== -->
+<!-- <script src="configuracion.js"></script> -->
+<!-- <script src="jsControladores/app.js"></script> -->
+<!-- <script src="jsControladores/utilidades.js"></script> -->
+<!-- <script src="jsControladores/serviciosGenericos.js"></script> -->
+<!-- <script src="jsControladores/serviciosSpringSecurity.js"></script> -->
+<!-- <script src="jsControladores/serviciosUsuario.js"></script> -->
+<!-- <script src="jsControladores/serviciosEvento.js"></script> -->
+<!-- <script src="jsControladores/serviciosSeleccionOp.js"></script> -->
+<!-- <script src="jsControladores/controladoresGenericos.js"></script> -->
+<!-- <script src="jsControladores/controladoresUsuario.js"></script> -->
+<!-- <script src="jsControladores/controladoresEvento.js"></script> -->
+<!-- <script src="jsControladores/controladoresSeleccionOp.js"></script> -->
+<!-- <script src="jsControladores/controladoresGeoLocalizacion.js"></script> -->
+
+<!-- <script src="jsControladores/filtros.js"></script> -->
+<!-- <script src="jsControladores/directivas.js"></script> -->
+
+<script>
+/**
+ * Hide the URL address bar on standard Android's browser by setting enough
+ * document height and auto scrolling to active the bar hiding feature
+ */
+
+function hideAddressBar()
+{
+  if(!window.location.hash)
+  {
+      if(document.height < window.outerHeight + 10)
+      {
+          document.body.style.height = (window.outerHeight + 50) + 'px';
+      }
+
+      setTimeout(function()
+      {
+      	window.scrollTo(0, 1);
+      }, 50);
+  }
+}
+/**
+ * Start up procedure to hide the Android's URL bar
+ */
+
+window.addEventListener("load", function()
+{
+
+	if(!window.pageYOffset)
+	{
+		hideAddressBar();
+	}
+
+	window.addEventListener("orientationchange", hideAddressBar);
+
+});
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="Purchase">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="icon" type="image/png" src="img/imagenes/icon.png" />
+</head>
+<body>
+
+<div id="head" >
+	<div class="logo">
+		<h1 id="site-title">
+			<a href="#" title="Purchase" rel="home">
+			</a>
+		</h1>
+	</div>
+</div>
+<div ng-view>
+	
+
+</div>
+
+<!-- JQuery ================================================================ -->
+<script src="jsLibs/jquery/jquery-2.0.3.js"></script>
+
+<!-- Bootstrap ============================================================= -->
+<script src="jsLibs/bootstrap/bootstrap.js"></script>
+
+<!-- AngularJS ============================================================= -->
+
+<script src="jsLibs/angular/angular.js"></script>
+<script src="jsLibs/angular/angular-resource.js"></script>
+
+
+<!-- AngularJS App Code ==================================================== -->
+<script src="configuracion.js"></script>
+<script src="jsControladores/app.js"></script>
+<script src="jsControladores/purchaseServices.js"></script>
+<script src="jsControladores/purchaseControlators.js"></script>
+<script src="jsControladores/directives.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>

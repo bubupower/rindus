@@ -1,0 +1,67 @@
+
+app.controller('DetalleUsuarioCtrl', ['$scope', '$routeParams', 'FactoriaUsuario', '$location',
+    function ($scope, $routeParams, FactoriaUsuario, $location) {
+		$scope.usuariosRegistrados = FactoriaUsuario.show({id: $routeParams.id}, [] ,
+	 		function (data) {
+        		$location.path('/detalle-usuario/' + data.id);
+	     	}, 
+	     	function (error) {
+	     		if (error.status == 401){
+	     			alert("Por favor, debe autentificarse.");
+	     			$location.path('/acceso');									     		
+	     		} else 
+	            alert("Error obteniendo los datos de usuario. Intentelo de nuevo más tarde.")
+	    });
+
+        // callback for ng-click 'updateUsuario':
+        $scope.actualizacionUsuariosRegistrados = function () {
+        		if($scope.formActualizacionUsuario.$valid){
+        			FactoriaUsuario.update([],$scope.usuariosRegistrados,
+			     				function (data) {
+        							alert("Los datos modificados se han actualizado correctamente.");
+							    	$location.path('/seleccion-operacion/'+$scope.usuariosRegistrados.id);
+						     	}, 
+						     	function (error) {
+						     		if (error.status == 401){
+						     			alert("Por favor, debe autentificarse.");
+						     			$location.path('/acceso');									     		
+						     		} else 
+						            alert("Error actualizando los datos de usuario. Intentelo de nuevo más tarde.")
+						     	});
+        		}
+        };
+        
+        // callback for ng-click 'cancel':
+        $scope.cancel = function (usuarioId) {
+            $location.path('/seleccion-operacion/'+ usuarioId);
+        };
+        
+    }]);
+
+app.controller('CreacionUsuarioCtrl', ['$scope', 'FactoriaUsuarios', '$location',
+    function ($scope, FactoriaUsuarios, $location) {       
+             
+        // callback for ng-click 'createNewUsuario':
+        $scope.crearNuevoUsuario = function () {
+        	if($scope.formNuevoUsuario.$valid){
+        		FactoriaUsuarios.create([], $scope.usuariosRegistrados,
+					     				function (data) {
+        			 					    $location.path('/acceso');
+								     		alert("Se ha registrado correctamente.")
+								     	}, 
+								     	function (error) {
+								     		if (error.status == 409){
+								     			alert("Imposible registrar usuario, el email ya existe en el sistema, si desactivo su cuenta en el pasado, intente reactivarla.");
+								     			$location.path('/acceso');									     		
+								     		}else 
+								     		alert("Error registrando el usuario, intentelo de nuevo más tarde.")
+								     	});                 
+        	}           
+        };
+        
+        // callback for ng-click 'cancel':
+        $scope.cancel = function () {
+            $location.path('/acceso');
+        };
+        
+    }]);

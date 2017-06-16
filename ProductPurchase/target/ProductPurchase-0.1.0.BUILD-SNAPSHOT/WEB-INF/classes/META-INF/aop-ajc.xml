@@ -1,0 +1,33 @@
+<aspectj>
+<aspects>
+<aspect name="es.product.domain.Product_Roo_Jpa_ActiveRecord"/>
+<aspect name="es.product.domain.Stock_Roo_ToString"/>
+<aspect name="es.product.web.StatusOperationController_Roo_Controller_Json"/>
+<aspect name="es.product.domain.BookingSales_Roo_DbManaged"/>
+<aspect name="es.product.domain.BookingSales_Roo_Json"/>
+<aspect name="es.product.web.ProductController_Roo_Controller_Json"/>
+<aspect name="es.product.domain.Product_Roo_Jpa_Entity"/>
+<aspect name="es.product.domain.BookingSales_Roo_Jpa_Entity"/>
+<aspect name="es.product.domain.Stock_Roo_Jpa_ActiveRecord"/>
+<aspect name="es.product.domain.BookingSales_Roo_Configurable"/>
+<aspect name="es.product.domain.StatusOperation_Roo_Jpa_Entity"/>
+<aspect name="es.product.domain.StatusOperation_Roo_Json"/>
+<aspect name="es.product.web.StockController_Roo_Controller_Json"/>
+<aspect name="es.product.domain.Stock_Roo_DbManaged"/>
+<aspect name="es.product.domain.Stock_Roo_Jpa_Entity"/>
+<aspect name="es.product.domain.Product_Roo_Json"/>
+<aspect name="es.product.domain.Product_Roo_DbManaged"/>
+<aspect name="es.product.domain.StatusOperation_Roo_Configurable"/>
+<aspect name="es.product.domain.Product_Roo_Configurable"/>
+<aspect name="es.product.domain.StatusOperation_Roo_Jpa_ActiveRecord"/>
+<aspect name="es.product.domain.StatusOperation_Roo_ToString"/>
+<aspect name="es.product.domain.Stock_Roo_Json"/>
+<aspect name="es.product.domain.BookingSales_Roo_Jpa_ActiveRecord"/>
+<aspect name="es.product.domain.Stock_Roo_Configurable"/>
+<aspect name="es.product.domain.BookingSales_Roo_ToString"/>
+<aspect name="es.product.domain.Product_Roo_ToString"/>
+<aspect name="es.product.domain.StatusOperation_Roo_DbManaged"/>
+<aspect name="es.product.web.BookingSalesController_Roo_Controller_Json"/>
+</aspects>
+</aspectj>
+
